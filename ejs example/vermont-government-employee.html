@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<script src="server.js"></script>
+</head>
+
+<body>
+<div id="Titles">
+	<h1>Html Forms</h1>
+	<h2>Vermont Government Employee Registration</h2>
+</div>
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="app.get()">Try it</button>
+
+
+<div id="Input">
+	<form name="input" action="http://httpbin.org/post" method="POST">
+		<fieldset>
+			<label for="Name">Name <input type="text" name="Name" id="Name" required="required" placeholder="Thomas Chittenden"></label><br>
+			<label for="Email">Email Address <input type="text" name="Email" id="Email" required="required" placeholder="th.chitt@vt.gov"></label><br>
+			<label for="DOB">DOB <input type="text" name="DOB" id="DOB" required="required" placeholder="mm/dd/yyyy"></label><br>
+			<label for="Postal">Home Postal Code <input type="text" name="Home Postal Code" id="Home Postal Code" required="required" placeholder="05401-1234"></label><br>
+			<label for="Color">Favorite Color <input type="color" name="Mycolor" id="MyColor" required="required" value="#909090"></label><br>
+			<label for="Website">Office Website <input type="text" name="Wesbsite" id="Website" required="required" placeholder=""></label><br>
+			<label for="Title">Title: <input type="radio" name="myTitle" id="GovernorTitle" required="required" value="Governor">Governor</label>
+				<input type="radio" name="myTitle" id="GovernorTitle" required="required" value="President">President
+				<input type="radio" name="myTitle" id="GovernorTitle" required="required" value="Mayor">Mayor<br>
+			<label for="Phone#">Work Phone Number <input type="text" name="PhoneNumber" id="PhoneNumber" required="required" placeholder="802-837-9984"></label><br>
+			<label for="Text">Accepts Text Messages <input type="checkbox" name="TextMessages" id="TextMessages" checked="yes" value="yes"></label><br>
+			<label for="Calls">Accepts Phone Calls<input type="checkbox" name="PhoneCalls" id="PhoneCalls" value="yes"></label><br>
+			<label for="Salary">Salary (Office Use Only) $ <input type="text" name="Salary" id="Salary" placeholder="48,928.33"></label><br>
+			<label for="Date">Hire Date <input type="text" name="HireDate" id="HireDate" required="required" placeholder="mm/dd/yyyy"></label><br>
+			<label for="IDCard">ID Card Photo <input type="file" name="CardPhoto" id="CardPhoto" required="required" accept="image/jpeg"></label><br>
+			<label for="SubmitButton"><input type="submit" name="submit" value="Submit"/></label>
+		</fieldset>
+	</form>
+	<script>
+	
+	</script>
+</div>
